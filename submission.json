@@ -1,0 +1,88 @@
+{
+    "students": [
+        {
+            "student_name": "Hello",
+            "student_id": "1",
+            "student_email": "lamnguyen.cis136@gmail.com",
+            "checklist_status": "partially completed",
+            "submission_time": "2024-10-19T17:31:57.215034"
+        },
+        {
+            "student_name": "Alice Johnson",
+            "student_id": "2",
+            "student_email": "alice.johnson@example.com",
+            "checklist_status": "completed",
+            "submission_time": "2024-10-19T18:45:23.014256"
+        },
+        {
+            "student_name": "Bob Smith",
+            "student_id": "3",
+            "student_email": "bob.smith@example.com",
+            "checklist_status": "in progress",
+            "submission_time": "2024-10-19T19:12:05.327845"
+        },
+        {
+            "student_name": "Carla Garcia",
+            "student_id": "4",
+            "student_email": "carla.garcia@example.com",
+            "checklist_status": "not started",
+            "submission_time": "2024-10-20T10:03:45.098734"
+        },
+        {
+            "student_name": "David Lee",
+            "student_id": "5",
+            "student_email": "david.lee@example.com",
+            "checklist_status": "partially completed",
+            "submission_time": "2024-10-20T11:47:12.212307"
+        },
+        {
+            "student_name": "adiawdih",
+            "student_id": "91289183",
+            "student_email": "nguywea@aijdiawd.cionon",
+            "checklist_status": "not started",
+            "submission_time": "2024-10-27T00:20:03.952055"
+        },
+        {
+            "student_name": "awdawdb",
+            "student_id": "iajbwdiabd",
+            "student_email": "iawbdaibwd@aiwbdaibd.cioanwd",
+            "checklist_status": "not started",
+            "submission_time": "2024-10-27T00:20:33.951537"
+        },
+        {
+            "student_name": "awdawdb",
+            "student_id": "iajbwdiabd",
+            "student_email": "iawbdaibwd@aiwbdaibd.cioanwd",
+            "checklist_status": "not started",
+            "submission_time": "2024-10-27T00:23:44.083271"
+        },
+        {
+            "student_name": "awdawdb",
+            "student_id": "iajbwdiabd",
+            "student_email": "iawbdaibwd@aiwbdaibd.cioanwd",
+            "checklist_status": "not started",
+            "submission_time": "2024-10-27T00:24:26.479499"
+        },
+        {
+            "student_name": "awdawdb",
+            "student_id": "iajbwdiabd",
+            "student_email": "iawbdaibwd@aiwbdaibd.cioanwd",
+            "checklist_status": "not started",
+            "submission_time": "2024-10-27T00:26:33.918992"
+        },
+        {
+            "student_name": "ajdnajwihd",
+            "student_id": "oiahdioahwdoi",
+            "student_email": "oaihd@oiadoahwd.aiowduaiuwd",
+            "checklist_status": "not started",
+            "submission_time": "2024-10-27T00:26:42.867570"
+        },
+        {
+            "student_name": "",
+            "student_id": "string",
+            "student_email": "string",
+            "checklist_status": "not started",
+            "submission_time": "2024-10-27T00:47:08.978124"
+        }
+    ]
+}
