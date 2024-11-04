@@ -26,8 +26,8 @@
       position: fixed;
       top: 0;
       width: 100%;
-      background-color: #333;
-      color: #fff;
+      background-color: #fff;
+      color: #000;
       padding: 15px 20px;
       display: flex;
       align-items: center;
@@ -61,8 +61,12 @@
     .form-section, .checklist-section {
       flex: 1;
       padding: 20px;  
-      border: 1px solid #ccc;
+      border: none;
       border-radius: 8px;
+    }
+    .checklist-section h2 {
+    margin-top: 0;
+    margin-bottom: 15px; /* Adds space between header and checklist items */
     }
     .form-section h2, .checklist-section h2 {
       margin-top: 0;
@@ -108,7 +112,7 @@
 <body>
   <!-- Fixed Header Section -->
   <div class="header">
-    <img src"downloads/umass" alt="UMass Logo">
+    <img src="umasslogo.png" alt="UMass Logo">
     <h1>University of Massachusetts Amherst</h1>
   </div>
 
