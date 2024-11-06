@@ -13,7 +13,7 @@
             "student_email": "alice.johnson@example.com",
             "checklist_status": "completed",
             "submission_time": "2024-10-19T18:45:23.014256"
-        },
+        },  
         {
             "student_name": "Bob Smith",
             "student_id": "3",
