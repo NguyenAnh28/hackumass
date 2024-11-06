@@ -28,6 +28,11 @@ def save_data(data):
 async def get_onboarding(request: Request):
     return templates.TemplateResponse("onboarding.html", {"request": request})
 
+# Route to render analytics.html
+@app.get("/analytics", response_class=HTMLResponse)
+async def get_analytics(request: Request):
+    return templates.TemplateResponse("analytics.html", {"request": request})
+
 # Route to handle form submission
 @app.post("/submit")
 async def submit_student(
