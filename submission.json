@@ -83,6 +83,27 @@
             "student_email": "string",
             "checklist_status": "not started",
             "submission_time": "2024-10-27T00:47:08.978124"
+        },
+        {
+            "student_name": "Nguyen Anh",
+            "student_id": "awdawd",
+            "student_email": "awdad@awdawd.cawd",
+            "checklist_status": "not started",
+            "submission_time": "2024-11-06T00:32:01.187319"
+        },
+        {
+            "student_name": "iasbdi",
+            "student_id": "1212",
+            "student_email": "antriubuib@umass.edu",
+            "checklist_status": "not started",
+            "submission_time": "2024-11-06T00:32:32.240686"
+        },
+        {
+            "student_name": "iasbdi",
+            "student_id": "1212",
+            "student_email": "antriubuib@umass.edu",
+            "checklist_status": "not started",
+            "submission_time": "2024-11-06T00:33:10.070226"
         }
     ]
 }
