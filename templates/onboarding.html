@@ -19,7 +19,6 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      margin: 0;
     }
     /* Fixed Header Styling */
     .header {
@@ -32,7 +31,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 15px; /* Space between logo and header text */
+      gap: 15px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
       z-index: 1000;
     }
@@ -51,31 +50,45 @@
       border-radius: 8px;
       padding: 20px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      margin-top: 100px; /* Space for the fixed header */
+      margin-top: 0; /* Remove gap between header and container */
     }
     /* Flex layout for form and checklist sections */
     .content {
       display: flex;
       gap: 30px;
+      flex-wrap: wrap;
     }
-    .form-section, .checklist-section {
+    /* Form Section on the Left */
+    .form-section {
       flex: 1;
-      padding: 20px;  
+      order: 1;
+      padding: 20px;
       border: none;
       border-radius: 8px;
     }
-    .checklist-section h2 {
-    margin-top: 0;
-    margin-bottom: 15px; /* Adds space between header and checklist items */
-    }
-    .form-section h2, .checklist-section h2 {
+    .form-section h2 {
       margin-top: 0;
+      font-size: 20px;
+      color: #333;
     }
-    /* Form styling */
+    /* Checklist Section on the Right */
+    .checklist-section {
+      flex: 1;
+      order: 2;
+      padding: 20px;
+      border: none;
+      border-radius: 8px;
+    }
+    .checklist-section h3 {
+      font-size: 20px;
+      color: #333;
+    }
+    /* Form Styling */
     label {
       display: block;
       margin-top: 10px;
       font-weight: bold;
+      color: #555;
     }
     input[type="text"], input[type="email"], input[type="submit"] {
       width: 100%;
@@ -90,19 +103,24 @@
       font-weight: bold;
       cursor: pointer;
       margin-top: 15px;
+      border: none;
+      transition: background-color 0.3s;
     }
     input[type="submit"]:hover {
       background-color: #0056b3;
     }
-    /* Checklist styling */
+    /* Checklist Styling */
     .checklist-section ul {
       list-style-type: none;
       padding: 0;
+      margin-top: 15px;
     }
     .checklist-section li {
       display: flex;
       align-items: center;
       margin-bottom: 10px;
+      font-size: 15px;
+      color: #333;
     }
     .checklist-section input[type="checkbox"] {
       margin-right: 10px;
@@ -118,41 +136,39 @@
 
   <!-- Main Container -->
   <div class="container">
-    <div class="content">
-      <!-- Student Information Form -->
+    <form action="/submit" method="POST" class="content">
+      <!-- Form Section (on the Left) -->
       <div class="form-section">
         <h2>Student Information</h2>
-        <form action="/submit" method="POST">
-          <label for="student_name">Name:</label>
-          <input type="text" id="student_name" name="student_name" required>
+        <label for="student_name">Name:</label>
+        <input type="text" id="student_name" name="student_name" required>
 
-          <label for="student_id">Student ID:</label>
-          <input type="text" id="student_id" name="student_id" required>
+        <label for="student_id">Student ID:</label>
+        <input type="text" id="student_id" name="student_id" required>
 
-          <label for="student_email">Email:</label>
-          <input type="email" id="student_email" name="student_email" required>
+        <label for="student_email">Email:</label>
+        <input type="email" id="student_email" name="student_email" required>
 
-          <input type="submit" value="Submit">
-        </form>
+        <input type="submit" value="Submit">
       </div>
 
-      <!-- Checklist Section -->
+      <!-- Checklist Section (on the Right) -->
       <div class="checklist-section">
-        <h2>University Preparation Checklist</h2>
+        <h3>Checklist</h3>
         <ul>
-          <li><input type="checkbox"> Complete any necessary placement tests or assessments</li>
-          <li><input type="checkbox"> Submit final transcripts and necessary documentation</li>
-          <li><input type="checkbox"> Enroll in university health insurance</li>
-          <li><input type="checkbox"> Secure on-campus or off-campus housing</li>
-          <li><input type="checkbox"> Attend orientation sessions</li>
-          <li><input type="checkbox"> Meet with an academic advisor to register for classes</li>
-          <li><input type="checkbox"> Obtain your student ID card</li>
-          <li><input type="checkbox"> Set up your university email account</li>
-          <li><input type="checkbox"> Review and understand academic policies and resources</li>
-          <li><input type="checkbox"> Familiarize yourself with campus facilities and services</li>
+          <li><input type="checkbox" name="checklist" value="placement_tests"> Complete any necessary placement tests or assessments</li>
+          <li><input type="checkbox" name="checklist" value="transcripts"> Submit final transcripts and necessary documentation</li>
+          <li><input type="checkbox" name="checklist" value="insurance"> Enroll in university health insurance</li>
+          <li><input type="checkbox" name="checklist" value="housing"> Secure on-campus or off-campus housing</li>
+          <li><input type="checkbox" name="checklist" value="orientation"> Attend orientation sessions</li>
+          <li><input type="checkbox" name="checklist" value="advisor_meeting"> Meet with an academic advisor to register for classes</li>
+          <li><input type="checkbox" name="checklist" value="student_id"> Obtain your student ID card</li>
+          <li><input type="checkbox" name="checklist" value="email_setup"> Set up your university email account</li>
+          <li><input type="checkbox" name="checklist" value="policies"> Review and understand academic policies and resources</li>
+          <li><input type="checkbox" name="checklist" value="campus_tour"> Familiarize yourself with campus facilities and services</li>
         </ul>
       </div>
-    </div>
+    </form>
   </div>
 </body>
 </html>
